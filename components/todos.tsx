@@ -11,7 +11,7 @@ export default async function Todos() {
   const todos = await getTodos()
 
   return (
-    <section className='container mt-16'>
+    <section className='mt-16'>
       <form
         action={revalidateTodos}
         className='flex items-center justify-between'

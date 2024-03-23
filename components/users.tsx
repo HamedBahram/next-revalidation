@@ -11,7 +11,7 @@ export default async function Users() {
   const users = await getUsers()
 
   return (
-    <section className='container mt-16 '>
+    <section className='mt-16'>
       <form
         action={revalidateUsers}
         className='flex items-center justify-between'

@@ -10,23 +10,13 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-  users,
-  todos
+  children
 }: {
   children: React.ReactNode
-  users: React.ReactNode
-  todos: React.ReactNode
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <main className='py-24'>
-          {children}
-          {users}
-          {todos}
-        </main>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
